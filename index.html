@@ -1,3 +1,4 @@
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -350,6 +351,55 @@
   }
   .btn-secondary:hover{background:#D3D3D6;}
 
+  /* ---------- Calls to action ---------- */
+  .cta-section{
+    margin-top:32px;
+    padding:28px;
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    box-shadow:0 1px 2px rgba(33,31,28,0.04);
+  }
+  .cta-section h2{
+    font-size:clamp(22px,4vw,28px);
+    line-height:1.2;
+    margin-bottom:10px;
+  }
+  .cta-intro{
+    color:var(--ink-soft);
+    font-size:15px;
+    margin:0 0 20px;
+  }
+  .cta-list{
+    display:grid;
+    gap:12px;
+  }
+  .cta-link{
+    display:block;
+    padding:16px 18px;
+    border:1.5px solid var(--line);
+    border-radius:var(--radius-sm);
+    color:var(--ink);
+    text-decoration:none;
+    font-weight:700;
+    transition:border-color .15s ease, background .15s ease, transform .1s ease;
+  }
+  .cta-link:hover{
+    border-color:var(--terracotta);
+    background:var(--terracotta-soft);
+  }
+  .cta-link:focus-visible{
+    outline:3px solid var(--terracotta);
+    outline-offset:3px;
+  }
+  .cta-link span{
+    display:block;
+    margin-top:4px;
+    color:var(--ink-soft);
+    font-size:13px;
+    font-weight:500;
+  }
+
   .footnote{
     text-align:center;
     font-size:12.5px;
@@ -446,7 +496,32 @@
       <button class="btn-primary" onclick="restart()">Retake the check-in</button>
       <button class="btn-secondary" onclick="copyResults()">Copy my results</button>
     </div>
+
+  <!-- CALLS TO ACTION -->
+  <section class="cta-section" aria-labelledby="cta-title">
+    <h2 id="cta-title">Ready to take the next step?</h2>
+    <p class="cta-intro">Explore how KGlearning can support your team and your centre's learning journey.</p>
+    <div class="cta-list">
+      <a class="cta-link" href="mailto:info@kglearning.com.au?subject=Book%20a%2020-minute%20chat">
+        Reach out for a 20-minute chat
+        <span>Book a conversation: info@kglearning.com.au</span>
+      </a>
+      <a class="cta-link" href="https://www.kglearning.com.au/professionallearning" target="_blank" rel="noopener noreferrer">
+        Come and check out our current professional learning
+        <span>Explore current professional learning opportunities</span>
+      </a>
+      <a class="cta-link" href="https://pedagogicalmeetingplace.kglearning.com.au" target="_blank" rel="noopener noreferrer">
+        Interested in self-paced learning options?
+        <span>Visit the Pedagogical Meeting Place</span>
+      </a>
+      <a class="cta-link" href="https://www.kglearning.com.au/kglearning-approach" target="_blank" rel="noopener noreferrer">
+        Curious about integrating an inquiry-based learning system?
+        <span>Learn about the KGlearning Approach</span>
+      </a>
+    </div>
+  </section>
   </div>
+
 
   <p class="footnote">Part of the KGlearning Approach — Learning · Systems · Pedagogy · Collaboration</p>
 </div>
@@ -616,3 +691,4 @@ renderQuestion();
 
 </body>
 </html>
+```
